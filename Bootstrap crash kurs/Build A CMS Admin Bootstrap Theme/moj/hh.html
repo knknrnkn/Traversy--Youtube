@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript-Beispiel</title>
+<script>
+function oeffnen(url) {
+
+var f;
+
+var fenster = window.open(url, f, 'width=500,height=300');
+
+fenster.focus();
+
+return false;
+}
+</script>
+</head>
+<body>
+<a href="link1.html" onclick="return oeffnen(this.href, 1)">
+Link 1</a><br>
+<a href="link2.html" onclick="return oeffnen(this.href, 2)">
+Link 2</a><br>
+<a href="link3.html" onclick="return oeffnen(this.href, 3)">
+Link 3</a>
+</body>
+</html>

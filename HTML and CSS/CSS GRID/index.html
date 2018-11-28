@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Grid!!</title>
+    <script>
+        document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
+    <style>
+        .wrapper {
+            display: grid;
+            /*slaze ih po redu u procentima koji su dati*/
+            grid-template-columns: 70% 30%;
+            /*razdvajanje kolona i redova 
+			grid-column-gap:1em;
+			grid-row-gap:1em;
+			*/
+            grid-gap: 2em;
+        }
+        
+        .wrapper>div {
+            background: #eee;
+            padding: 1em;
+        }
+        
+        .wrapper>div:nth-child(odd) {
+            background: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint reiciendis culpa saepe, et eaque temporibus sed magnam earum esse porro, quasi quam unde expedita recusandae distinctio consectetur vitae dignissimos. Rem vitae nihil incidunt delectus
+            itaque laboriosam autem aliquam, fugit nulla animi dignissimos consectetur culpa?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint reiciendis culpa saepe, et eaque temporibus sed magnam earum esse porro, quasi quam unde expedita
+            recusandae distinctio consectetur vitae dignissimos. Rem vitae nihil incidunt delectus itaque laboriosam autem aliquam, fugit nulla animi dignissimos consectetur culpa?
+        </div>
+
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint reiciendis culpa saepe, et eaque temporibus sed magnam earum esse porro, quasi quam unde expedita recusandae distinctio consectetur vitae dignissimos.
+        </div>
+
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint reiciendis culpa saepe, et eaque temporibus sed magnam earum esse porro, quasi quam unde expedita recusandae distinctio consectetur vitae dignissimos. Rem vitae nihil incidunt delectus
+            itaque laboriosam autem aliquam, fugit nulla animi dignissimos consectetur culpa?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint reiciendis culpa saepe, et eaque temporibus sed magnam earum esse porro, quasi quam unde expedita
+            recusandae distinctio consectetur vitae dignissimos. Rem vitae nihil incidunt delectus itaque laboriosam autem aliquam, fugit nulla animi dignissimos consectetur culpa?
+        </div>
+
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint reiciendis culpa saepe, et eaque temporibus sed magnam earum esse porro, quasi quam unde expedita recusandae distinctio consectetur vitae dignissimos.
+        </div>
+    </div>
+
+
+</body>
+
+</html>

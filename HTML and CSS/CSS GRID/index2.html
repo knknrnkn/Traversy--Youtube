@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Grid</title>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</head>
+<style>
+	.wrapper{
+		display: grid;
+		/*Frakcija ili fr deli na jednake delove
+		grid-template-columns: 1fr 1fr 1fr*/
+
+		grid-template-columns:repeat 1fr 1fr 1fr;
+
+	}
+
+	.wrapper>div {
+			background: #eee;
+			padding: 1em;
+		}
+
+		.wrapper>div:nth-child(odd) {
+			background: #ddd;
+		}
+
+</style>
+<body>
+
+	<div class="wrapper">
+		<div>loerm ipsum tamo nesto</div>
+		<div>loerm ipsum tamo nesto</div>
+		<div>loerm ipsum tamo nesto</div>
+		<div>loerm ipsum tamo nesto</div>
+		<div>loerm ipsum tamo nesto</div>
+		<div>loerm ipsum tamo nesto</div>
+		<div>loerm ipsum tamo nesto</div>
+	</div>
+
+</body>
+</html>
